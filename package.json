@@ -17,7 +17,7 @@
     "url": "https://github.com/Nase00/withStyles/issues"
   },
   "homepage": "https://github.com/Nase00/withStyles#readme",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.3.1"
   }
 }
