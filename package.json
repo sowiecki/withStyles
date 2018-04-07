@@ -1,7 +1,8 @@
 {
   "name": "withstyles",
-  "version": "1.0.0",
-  "description": "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
+  "version": "1.0.1",
+  "description":
+    "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
