@@ -1,11 +1,10 @@
 {
   "name": "withstyles",
   "version": "1.0.1",
-  "description":
-    "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
-  "main": "index.js",
+  "description": "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
+  "main": "index/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "demo": "webpack-serve"
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,19 @@
   "homepage": "https://github.com/Nase00/withStyles#readme",
   "peerDependencies": {
     "react": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "emotion": "^9.1.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-serve": "^0.3.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0"
   }
 }
