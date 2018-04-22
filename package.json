@@ -2,9 +2,10 @@
   "name": "withstyles",
   "version": "1.0.1",
   "description": "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
-  "main": "index/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "demo": "webpack-serve"
+    "demo": "webpack-serve --config webpack/webpack.config.dev.js",
+    "build": "webpack --config webpack/webpack.config.prod.js"
   },
   "repository": {
     "type": "git",

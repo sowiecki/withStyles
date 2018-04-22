@@ -1,35 +1,26 @@
-import { css } from "emotion";
+import React, { Component } from "react";
 
-import withStyles from "../src";
-
-const stylesGenerator = props => ({
-  input: css`
-    color: #0000ff;
-  `,
-
-  button: css`
-    border: 2px solid #00ff00;
-    color: #ff0000;
-  `
-});
+import Demo from "./demo";
 
 class Root extends Component {
-  renderInput() {
-    const { computedStyles } = this.props;
+  constructor(props) {
+    super(props);
 
-    return <input type="text" className={computedStyles.input} />;
+    this.state = {
+      color: "#00ff00"
+    };
+
+    this.handleColorUpdate = this.handleColorUpdate.bind(this);
+  }
+
+  handleColorUpdate(color) {
+    console.log(color);
+    this.setState({ color });
   }
 
   render() {
-    const { computedStyles, children } = this.props;
-
-    return (
-      <div>
-        {this.renderInput()}
-        <button className={computedStyles.button}>{children}</button>
-      </div>
-    );
+    return <Demo {...this.state} onColorUpdate={this.handleColorUpdate} />;
   }
 }
 
-export default withStyles(stylesGenerator)(Root);
+export default Root;

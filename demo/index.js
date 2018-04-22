@@ -4,5 +4,4 @@ import { render } from "react-dom";
 import Root from "./root";
 
 const node = document.getElementById("root");
-
-React.render(<Root />, node);
+render(<Root />, node);
