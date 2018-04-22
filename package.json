@@ -1,6 +1,6 @@
 {
   "name": "withstyles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Higher-Order Component (HOC) for efficiently processing CSS-in-JS using component props.",
   "main": "dist/index.js",
   "scripts": {
